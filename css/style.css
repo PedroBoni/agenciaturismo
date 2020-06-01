@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    z-index: 2;
+}
+.carousel{
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 228, 228, 0.411);
+}
+.carousel img{
+    z-index: 1;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.carousel i{
+    font-size: 40px;
+    color:rgb(223, 222, 222);
+}
+.carousel button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(95, 95, 95, 0.589);
+    border-radius: 50%;
+    width: 40px;
+    border: 0;
+    height: 40px;
+    z-index: 2;
+}
+.carousel button:hover {
+    width: 45px;
+    height: 45px;
+    transition: all .1s;
+}
+.carousel button:last-child{
+    right: 5px;
+}
+.carousel button:first-child{
+    left: 5px;
+}
+.col-sm-5{
+    max-width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+#aviao{
+    position: absolute;
+    max-width: 100%;
+    opacity: 0;
+    animation: anime 10s infinite;
+}
+@keyframes anime{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+#aviao:nth-child(0){
+    animation-delay: 1s;
+}
+#aviao:nth-child(1){
+    animation-delay: 5s;
+}
+#aviao:nth-child(2){
+    animation-delay: 9s;
+}
+#aviao:nth-child(3){
+    animation-delay: 13s;
+}
+#rowPanels{
+    margin-top: 20px;
+}
+nav{
+    background:rgb(247, 247, 247);
+    height: 80px;
+    width: 100%;
+}
+img.logo{
+    line-height: 80px;
+    padding:0 100px;
+    height: 80px;
+    min-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color: rgb(22, 22, 22);
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background:rgb(238, 236, 236);
+    transition: .5s;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color:rgb(22, 22, 22);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    img.logo{
+        height: 80px;
+        min-height: 80px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .carousel img{
+        transform: scale(1.05,1.05);
+    }
+}
+@media(max-width:768px){
+    .carousel{
+        height: auto;
+    }
+    .carousel img{
+        transform: scale(1.15,1.15);
+    }
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: absolute;
+        width: 90%;
+        height: auto;
+        background:rgb(247, 247, 247);
+        border-radius: 0 0 10px 10px;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        z-index: 2;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a.active, a:hover{
+        background:rgb(238, 236, 236);
+    }
+    #check:checked ~ ul{
+        left:0;
+        margin-bottom: 50vh;
+    }
+    .container{
+        width:90%;
+    }
+    .col-sm-5{
+        min-height: 250px;
+    }
+}
+#Contato .row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#Contato h1{    
+    text-align: center;
+    color: rgba(25, 138, 230);
+    border-bottom:1px solid rgba(25, 138, 230, 0.788);
+    margin-bottom: 5px;
+}
+#Contato form{
+    border-radius: 5px;
+    border:1px solid rgba(25, 138, 230, 0.788);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top:0;
+    margin-top: 20px;
+}
+#Contato label{
+    font-weight: 100;
+}
+#Contato .form-control{
+    background-color: rgb(230, 230, 230);
+    border:1px solid rgba(25, 138, 230, 0.788);
+    border-left: 0;
+    border-right: 0;
+    color: #000;
+}
+#Contato input:placeholder-shown,#Contato input:active{
+    background-color:  rgb(230, 230, 230);
+}
+#Contato .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(25, 138, 230, 0.788);
+    border: 0;
+    color: #FFF;
+}
+#Contato .btn:hover{
+    background-color: rgba(0, 140, 255, 0.911);
+    border: 0;
+    color: #FFF;
+}

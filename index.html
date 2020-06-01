@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Agência de Turismo</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check" onclick="move()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label><img class="logo" src="img/Turismo.png" alt="Turismo"></label>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#agencia">Agência</a></li>
+      <li ><a href="#rowPanels">Pacotes</a></li>
+      <li><a href="#Contato">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="home" class="container">
+      <div class="carousel col-sm-12">
+        <button onclick="moveLeft()"> <i class="fas fa-angle-left"></i> </button>
+          <img src="img/sp.jpg" alt="São Paulo">
+        <button onclick="moveRight()"><i class="fas fa-angle-right"></i></button>
+      </div>
+      <div id="agencia" class="row">
+        <div class="col-sm-12">
+          <fieldset>
+            <legend>
+              Nossa Agência
+            </legend>
+          </fieldset>
+        </div>
+        <div class="col-sm-5">
+          <img id="aviao" src="img/aviao.jpg" alt="Imagem de Avião">
+          <img id="aviao" src="img/aviao1.jpg" alt="Imagem de Avião">
+          <img id="aviao" src="img/aviao2.jpg" alt="Imagem de Avião">
+          <img id="aviao" src="img/aviao4.jpg" alt="Imagem de Avião">
+        </div>
+        <div class="col-sm-7">
+          <h3>Agência de Viagens, Turismo e Guia de Hotéis e Pousadas</h3><br>
+          Nossa proposta é surpreender, já que este é nosso pensamento. Ir além da simples venda, compreendendo e satisfazendo as necessidades de cada cliente com qualidade.<br><br>
+          Acreditamos que o sucesso de uma viagem é o resultado da experiêcia, atenção e cuidado em sua organização, sendo assim, possuímos uma equipe preparada para planejar e assessorar as viagens individuais e de grupos com criatividade, segurança e atendimento personalizade. 
+        </div>
+      </div>
+      <div id="rowPanels" class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              Pacote Business
+            </div>
+            <div class="panel-body text-center">
+              <h2>São Paulo</h2>
+              <h4>Hotel Mercury</h4>
+              incluso café da manhã e almoço completo <br><br>
+              <h4>4 dias e 3 noites</h4>
+              <h2>R$ 1200,00</h2>
+              por pessoa
+              <br><br>
+            </div>
+            <div class="panel-footer text-center">
+              <button class="btn btn-primary btn-xs">Reserve já</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              Pacote Business
+            </div>
+            <div class="panel-body text-center">
+              <h2>Rio de Janeiro</h2>
+              <h4>Hotel Belmond Copacabana Palace</h4>
+              incluso café da manhã e almoço completo <br><br>
+              <h4>4 dias e 3 noites</h4>
+              <h2>R$ 5200,00</h2>
+              por pessoa
+              <br><br>
+            </div>
+            <div class="panel-footer text-center">
+              <button class="btn btn-primary btn-xs">Reserve já</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              Pacote Business
+            </div>
+            <div class="panel-body text-center">
+              <h2>Fortaleza</h2>
+              <h4>Hotel Marina Park</h4>
+              incluso café da manhã e almoço completo <br><br>
+              <h4>4 dias e 3 noites</h4>
+              <h2>R$ 8200,00</h2>
+              por pessoa
+              <br><br>
+            </div>
+            <div class="panel-footer text-center">
+              <button class="btn btn-primary btn-xs">Reserve já</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Contato">
+      <div class="row">
+        <form class="col-xs-11 col-sm-10 col-md-8 col-lg-6">
+          <h1>Fale Conosco</h1>
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" required class="form-control" id="name" placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required placeholder="Seu e-mail">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="number" class="form-control" id="phone" required placeholder="Seu telefone">
+          </div>
+          <div class="form-group">
+            <label for="text-query">Duvida:</label>
+            <input type="text" required class="form-control" id="text-query" placeholder="Sua dúvida">
+          </div>
+          <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
+</body>
+</html>
