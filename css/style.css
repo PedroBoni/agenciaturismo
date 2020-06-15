@@ -197,6 +197,7 @@ a.active, a:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 #Contato h1{    
     text-align: center;
@@ -237,4 +238,53 @@ a.active, a:hover{
     background-color: rgba(0, 140, 255, 0.911);
     border: 0;
     color: #FFF;
+}
+.socialMedia{
+    text-align: center;
+    
+}
+.socialMedia div{
+    display: flex;
+    width: 180px;
+    height: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.socialMedia div .btnMedia{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 500ms;
+    cursor: pointer;
+}
+.socialMedia div .btnMedia:hover,.btnMedia:active{
+    opacity: 0.7;
+}
+
+.socialMedia div .btnMedia i{
+    color: #FFF
+}
+ #fb{
+    background-color: rgb(3, 94, 241);
+}
+ #inst{
+    background-color: rgb(241, 3, 189);
+}
+ #tw{
+    background-color: rgb(3, 146, 241);
+}
+ #sh{
+    background-color: rgb(241, 88, 0);
+}
+footer{
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
