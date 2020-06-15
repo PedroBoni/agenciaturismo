@@ -136,66 +136,10 @@ a.active, a:hover{
 #check{
     display: none;
 }
-@media(max-width:952px){
-    img.logo{
-        height: 80px;
-        min-height: 80px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    .carousel img{
-        transform: scale(1.05,1.05);
-    }
-}
-@media(max-width:768px){
-    .carousel{
-        height: auto;
-    }
-    .carousel img{
-        transform: scale(1.15,1.15);
-    }
-    .checkbtn{
-        display:block;
-    }
-    ul{
-        position: absolute;
-        width: 90%;
-        height: auto;
-        background:rgb(247, 247, 247);
-        border-radius: 0 0 10px 10px;
-        top: 80px;
-        left: -110%;
-        text-align: center;
-        z-index: 2;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
-    }
-    nav ul li a{
-        font-size:20px;
-    }
-    a.active, a:hover{
-        background:rgb(238, 236, 236);
-    }
-    #check:checked ~ ul{
-        left:0;
-        margin-bottom: 50vh;
-    }
-    .container{
-        width:90%;
-    }
-    .col-sm-5{
-        min-height: 250px;
-    }
-}
+
 #Contato .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
@@ -241,7 +185,10 @@ a.active, a:hover{
 }
 .socialMedia{
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 .socialMedia div{
     display: flex;
@@ -287,4 +234,69 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media(max-width:952px){
+    img.logo{
+        height: 80px;
+        min-height: 80px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .carousel img{
+        transform: scale(1.05,1.05);
+    }
+    #Contato .row{
+        justify-content: center;
+    }
+}
+@media(max-width:1000px){
+    #Contato .row{
+        justify-content: center;
+    }
+}
+@media(max-width:768px){
+    .carousel{
+        height: auto;
+    }
+    .carousel img{
+        transform: scale(1.15,1.15);
+    }
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: absolute;
+        width: 90%;
+        height: auto;
+        background:rgb(247, 247, 247);
+        border-radius: 0 0 10px 10px;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        z-index: 2;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a.active, a:hover{
+        background:rgb(238, 236, 236);
+    }
+    #check:checked ~ ul{
+        left:0;
+        margin-bottom: 50vh;
+    }
+    .container{
+        width:90%;
+    }
+    .col-sm-5{
+        min-height: 250px;
+    }
 }
